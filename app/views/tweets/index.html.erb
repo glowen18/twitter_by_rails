@@ -1,0 +1,13 @@
+<h1>Twitter Clone</h1>
+
+<ul>
+  <% @tweets.each do |tweet| %>
+    <li>
+      <strong><%= tweet.name %></strong>
+      <em><%= tweet.email %></em><br>
+      <%= tweet.content %><br><br>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Add a new tweet", new_tweet_path %>

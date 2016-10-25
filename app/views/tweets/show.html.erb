@@ -1,0 +1,9 @@
+<h1><%= @tweet.name %></h1>
+
+<p><%= @tweet.content %></p>
+
+<p><%= link_to "Edit this tweet... if you dare!", edit_tweet_path %></p>
+
+<p><%= link_to "Delete this tweet please!", tweet_path, method: :delete, data: {confirm: "Are you sure you want to delete this bean?"} %></p>
+
+<p><%= link_to "Back to my tweets...", tweets_path %></p>
